@@ -1,6 +1,6 @@
 body {
   font: 18px helvetica, sans-serif;
-  background: #d4af37;
+  background: #faebd7;
 }
 
 #moods {
@@ -39,17 +39,16 @@ input[type="submit"] {
   color: #aeaeae;
   cursor: pointer;
   background: #659a98;
-  border: 0;
   border-radius: 5px;
-  box-shadow: 2px 2px 3px #bbb;
+ 
 }
 
 button:hover,
 input[type="submit"]:hover {
-  background: #334e4d;
+  background: #fff;
 }
 
 button.active {
-  background: #334e4d;
+  background: #fff;
 }
 
