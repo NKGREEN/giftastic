@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   }
 $(document).on("click", ".mood-button", function() {
-    $("#moodss").empty();
+    $("#moods").empty();
     $(".mood-button").removeClass("active");
     $(this).addClass("active");
 
@@ -73,10 +73,10 @@ $(document).on("click", ".mood-button", function() {
 
   $("#add-mood").on("click", function(event) {
     event.preventDefault();
-    var newAnimal = $("input").eq(0).val();
+    var newMood = $("input").eq(0).val();
 
-    if (newAnimal.length > 2) {
-      animals.push(newAnimal);
+    if (newMood.length > 2) {
+      moods.push(newMood);
     }
 
     populateButtons(moods, "mood-button", "#mood-buttons");
