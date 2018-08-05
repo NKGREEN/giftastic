@@ -5,7 +5,6 @@ $(document).ready(function() {
     "mondays be like", "friyay", "turnup", "hotline bling", "winning", "chillin"
   ];
 
-  // add butttons 
   function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
     $(areaToAddTo).empty();
 
@@ -24,7 +23,7 @@ $(document).on("click", ".mood-button", function() {
     $(this).addClass("active");
 
     var type = $(this).attr("data-type");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=8kg09rD41ApnOGiI7vQFXJTaORQfhV&limit=10";
 
     $.ajax({
       url: queryURL,
