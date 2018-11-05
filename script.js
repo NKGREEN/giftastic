@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var moods = [
+  var mood = [
     "mondays be like", "freaking out", "yay", "crying", "dismissed", "flirty",
     "shade", "not bad", "confused", "tired", "seriously",
     "nope", "thinking", "suspicious", "treatyoself", "hotline bling",
