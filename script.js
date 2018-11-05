@@ -1,11 +1,7 @@
 $(document).ready(function() {
 
-  var animals = [
-    "dog", "cat", "rabbit", "hamster", "skunk", "goldfish",
-    "bird", "ferret", "turtle", "sugar glider", "chinchilla",
-    "hedgehog", "hermit crab", "gerbil", "pygmy goat", "chicken",
-    "capybara", "teacup pig", "serval", "salamander", "frog"
-  ];
+ var animals = ['dragon', 'heffalump', 'unicorn', 'phoenix bird', 'mermaid', 'orc', 'pegasus', 'charmander', 'pikachu', 'yeti', 
+'nessie', 'centaur', 'gargoyle', 'kappa monster', 'mewtwo', 'chupacabra'];
 
   // function to make buttons and add to page
   function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
