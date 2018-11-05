@@ -10,8 +10,7 @@
 
 
 body{
-	background-color: #fff9e6;
-	background-image: url("https://stmed.net/sites/default/files/fantasy-waterfall-wallpapers-28166-2280100.jpg);
+	background-image: url("assets/images/fantasy_background.jpg");
 
 	font-family: 'MedievalSharp', cursive;
 	color: #000000;
@@ -21,14 +20,14 @@ html{
 	border: 30px solid;
 
 	/*border: 2px solid;*/
-	border-color: #ac7339;
+	border-color: #7E21D4;
 
 	min-height: 100%;
 }
 
 #animaltastic{
 	font-style: italic;
-	color: #ff0000;
+	color: #CC5500;
 }
 
 #main_container{
