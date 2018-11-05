@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<title>Giphtastic! Mythological Creatures Edition</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Animaltastic</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+		<!-- Link in CSS Style -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-<body>
+        <link href="https://fonts.googleapis.com/css?family=MedievalSharp|Raleway" rel="stylesheet">
 
-  <div id="animal-buttons">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-  </div>
+	</head>
+	<body>
 
-  <form id="animal-form">
-    <label for="animal-input">Add an animal</label>
-    <input type="text" id="animal-input"><br>
-    <input id="add-animal" type="submit" value="Submit">
-  </form>
+		<!-- Title Page -->
+		<h1 id = "logo">The <span id = "animaltastic">Giphtastic!</span> Mythological Creature Edition</h1>
 
-  <div id="animals">
+		<br>
+		
+		<div id = "main_container">
+			<!-- Div to Append Animal Buttons -->
+			<div id = "animal_buttons"></div>
 
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-  
-</body>
+			<!-- Div to contian Animal Inputs Form -->
+			<div id = "animal_input_box">
+				<form id = "animal_form">
+
+					<!-- Label for Form -->
+					<label for = "animal_input">Add an Creature!</label>
+
+                    <br>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
-
