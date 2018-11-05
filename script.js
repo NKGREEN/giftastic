@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-  var mood = [
-    "mondays be like", "freaking out", "yay", "crying", "dismissed", "flirty",
-    "shade", "not bad", "confused", "tired", "seriously",
-    "nope", "thinking", "suspicious", "treatyoself", "hotline bling",
-    "love", "lucky", "strut", "why", "evil laugh"
+  var animals = [
+    "dog", "cat", "rabbit", "hamster", "skunk", "goldfish",
+    "bird", "ferret", "turtle", "sugar glider", "chinchilla",
+    "hedgehog", "hermit crab", "gerbil", "pygmy goat", "chicken",
+    "capybara", "teacup pig", "serval", "salamander", "frog"
   ];
 
   // function to make buttons and add to page
@@ -21,13 +21,13 @@ $(document).ready(function() {
 
   }
 
-  $(document).on("click", ".mood-button", function() {
-    $("#mood").empty();
-    $(".mood-button").removeClass("active");
+  $(document).on("click", ".animal-button", function() {
+    $("#animals").empty();
+    $(".animal-button").removeClass("active");
     $(this).addClass("active");
 
     var type = $(this).attr("data-type");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=8kg09rD41ApnOGiI7vQFXJTaORQfhV&limit=10";
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC&limit=10";
 
     $.ajax({
       url: queryURL,
@@ -37,7 +37,7 @@ $(document).ready(function() {
         var results = response.data;
 
         for (var i = 0; i < results.length; i++) {
-          var animalDiv = $("<div class=\"mood-item\">");
+          var animalDiv = $("<div class=\"animal-item\">");
 
           var rating = results[i].rating;
 
@@ -46,22 +46,22 @@ $(document).ready(function() {
           var animated = results[i].images.fixed_height.url;
           var still = results[i].images.fixed_height_still.url;
 
-          var moodImage = $("<img>");
-          moodImage.attr("src", still);
-          moodImage.attr("data-still", still);
-          moodImage.attr("data-animate", animated);
-          moodImage.attr("data-state", "still");
-          moodImage.addClass("mood-image");
+          var animalImage = $("<img>");
+          animalImage.attr("src", still);
+          animalImage.attr("data-still", still);
+          animalImage.attr("data-animate", animated);
+          animalImage.attr("data-state", "still");
+          animalImage.addClass("animal-image");
 
-          moodDiv.append(p);
-          moodDiv.append(moodImage);
+          animalDiv.append(p);
+          animalDiv.append(animalImage);
 
-          $("#mood").append(moodDiv);
+          $("#animals").append(animalDiv);
         }
       });
   });
 
-  $(document).on("click", ".mood-image", function() {
+  $(document).on("click", ".animal-image", function() {
 
     var state = $(this).attr("data-state");
 
@@ -75,18 +75,18 @@ $(document).ready(function() {
     }
   });
 
-  $("#add-mood").on("click", function(event) {
+  $("#add-animal").on("click", function(event) {
     event.preventDefault();
-    var newMood = $("input").eq(0).val();
+    var newAnimal = $("input").eq(0).val();
 
-    if (newMood.length > 2) {
-      moods.push(newMood);
+    if (newAnimal.length > 2) {
+      animals.push(newAnimal);
     }
 
-    populateButtons(moods, "mood-button", "#mood-buttons");
+    populateButtons(animals, "animal-button", "#animal-buttons");
 
   });
 
-  populateButtons(moods, "mood-button", "#mood-buttons");
+  populateButtons(animals, "animal-button", "#animal-buttons");
 });
 
