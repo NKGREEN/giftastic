@@ -3,11 +3,11 @@ body {
   background: #eee;
 }
 
-#mood {
+#animals {
   width: 70%;
 }
 
-.mood-item {
+.animal-item {
   float: left;
   padding: 10px;
 }
@@ -52,4 +52,3 @@ input[type="submit"]:hover {
 button.active {
   background: #334e4d;
 }
-
