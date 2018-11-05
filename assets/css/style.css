@@ -26,6 +26,7 @@ html{
 }
 
 #animaltastic{
+	font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	color: #CC5500;
 }
@@ -44,7 +45,7 @@ html{
 
 label{
 	font-weight: bold;
-
+	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 }
 
@@ -52,7 +53,7 @@ label{
 	background-color: #cc0000;
 
 	border-color: #000000;
-
+	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 
 	color: white;
