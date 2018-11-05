@@ -11,7 +11,7 @@
 
 body{
 	background-image: url("assets/images/fantasy_background.jpg");
-
+        background-color: #30B1FF;
 	font-family: 'MedievalSharp', cursive;
 	color: #000000;
 }
