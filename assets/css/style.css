@@ -10,7 +10,7 @@
 
 
 body{
-	background-image: url("assets/images/fantasy_background.jpg");
+	background-image: url("../images/fantasy_background.jpg");
         background-color: #30B1FF;
 	font-family: 'MedievalSharp', cursive;
 	color: #000000;
@@ -26,7 +26,7 @@ html{
 }
 
 #animaltastic{
-	font-family: 'MedievalSharp', cursive;
+	font-style: italic;
 	color: #CC5500;
 }
 
