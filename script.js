@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
   var moods = [
-    "shade", "treatyoself", "dismissed", "feelingmyself", "shook", "sad",
-    "mondays be like", "friyay", "turnup", "hotline bling", "winning", "chillin"
+    "mondays be like", "freaking out", "yay", "crying", "dismissed", "flirty",
+    "shade", "not bad", "confused", "tired", "seriously",
+    "nope", "thinking", "suspicious", "treatyoself", "hotline bling",
+    "love", "lucky", "strut", "why", "evil laugh"
   ];
 
+  // function to make buttons and add to page
   function populateButtons(arrayToUse, classToAdd, areaToAddTo) {
     $(areaToAddTo).empty();
 
@@ -17,8 +20,9 @@ $(document).ready(function() {
     }
 
   }
-$(document).on("click", ".mood-button", function() {
-    $("#moods").empty();
+
+  $(document).on("click", ".mood-button", function() {
+    $("#mood").empty();
     $(".mood-button").removeClass("active");
     $(this).addClass("active");
 
@@ -33,7 +37,7 @@ $(document).on("click", ".mood-button", function() {
         var results = response.data;
 
         for (var i = 0; i < results.length; i++) {
-          var moodDiv = $("<div class=\"mood-item\">");
+          var animalDiv = $("<div class=\"mood-item\">");
 
           var rating = results[i].rating;
 
@@ -49,10 +53,10 @@ $(document).on("click", ".mood-button", function() {
           moodImage.attr("data-state", "still");
           moodImage.addClass("mood-image");
 
-          moodsDiv.append(p);
-          moodsDiv.append(moodImage);
+          moodDiv.append(p);
+          moodDiv.append(moodImage);
 
-          $("#moods").append(moodsDiv);
+          $("#mood").append(moodDiv);
         }
       });
   });
@@ -85,3 +89,4 @@ $(document).on("click", ".mood-button", function() {
 
   populateButtons(moods, "mood-button", "#mood-buttons");
 });
+
