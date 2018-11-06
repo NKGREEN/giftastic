@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Giphtastic! Mythological Creatures Edition</title>
+<html lang="en">
 
-		<!-- Link in CSS Style -->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-        <link href="https://fonts.googleapis.com/css?family=MedievalSharp|Raleway" rel="stylesheet">
-
-	</head>
-	<body>
-
-		<!-- Title Page -->
-		<h1 id = "logo"><span id = "animaltastic">Giphtastic!</span> Mythological Creature Edition</h1>
-
-		<br>
-		<br>
-		
-		<div id = "main_container">
-			<!-- Div to Append Animal Buttons -->
-			<div id = "animal_buttons"></div>
+<head>
+    <meta charset="utf-8">
+    <title>Giphtastic Magical Creatues</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+         <link href="https://fonts.googleapis.com/css?family=MedievalSharp|Raleway" rel="stylesheet">
+    <script src="http://danml.com/js/download.js"></script>
 
 
-			<!-- Div to contian Animal Inputs Form -->
-			<div id = "animal_input_box">
-				<form id = "animal_form">
+</head>
 
-					<!-- Label for Form -->
-					<label for = "animal_input">Add a Creature!</label>
+<body>
+  <h1 id = "logo"><span id = "giphtastic">Giphtastic!</span> Magical Creatures</h1>
 
-                    <br>
-                </form>
+    <div class="container">
+
+        <div class="row btn-view mt-4 ml-3"></div>
+
+        <div class="col-md-9 col-sm-9 float-left">
+
+
+            <div class="card mt-4">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body giphy-display">
+
+
+                </div>
             </div>
-		</div>
-	
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
- 		 integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  		crossorigin="anonymous"></script>
-		<script src="../javascript/giphy.js"></script>
-    </body>
-</html>
 
+
+        </div>
+
+        <div class="col-md-3 col-sm-3  float-right mt-4">
+
+            <div class="card ml-0 mr-0">
+                <div class="card-header">
+                    Add a creature!
+                </div>
+                <div class="card-body">
+                    <input type="text" class="form-control theme-input" aria-describedby="inputGroup-sizing-lg">
+                    <button type="button" class="btn btn-primary mt-2 fetch" aria-describedby="inputGroup-sizing-lg">Add</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="code.js"></script>
+
+
+</body>
+
+
+</html>
